@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { NAV_ITEMS } from "@/lib/constants";
+import UserDropdown from "@/components/ui/UserDropdown";
 
 const Header = () => {
     return (
@@ -19,7 +20,7 @@ const Header = () => {
             ))}
             </nav>
 
-
+            {<UserDropdown />}
         </div>
         
         
