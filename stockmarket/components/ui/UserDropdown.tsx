@@ -7,6 +7,7 @@ import {
     DropdownMenuSeparator,
     DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
+import NavItems from './NavItems';
 import { useRouter } from "next/navigation";
 import { Button } from "./button";
 import {Avatar, AvatarFallback, AvatarImage} from "@/components/ui/avatar"; 
@@ -63,6 +64,10 @@ const UserDropdown = () => {
                    <DropdownMenuItem onClick={handleSignout} className="text-gray-100 text-md font-medium focus:bg-transparent forcus:text-yellow-500 transition-colors cursor-pointer">
                     <span className="h-4 w-4 mr-2 hidden sm:block">Logout</span>
                    </DropdownMenuItem>
+                   <DropdownMenuSeparator className="hidden sm:block bg-gray-600" />
+                   <nav>
+                    <NavItems />
+                   </nav>
                    <DropdownMenuItem>Billing</DropdownMenuItem>
                    <DropdownMenuItem>Team</DropdownMenuItem>
             <DropdownMenuItem>Subscription</DropdownMenuItem>
