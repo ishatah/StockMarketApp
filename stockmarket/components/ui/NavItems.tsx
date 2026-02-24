@@ -6,10 +6,10 @@ const NavItems = () => {
 
     const pathname = usePathname()
     const isActive = (path: string) => {
-        if (path === '/') {
-            return pathname === path
-        }
-        return pathname?.startsWith(path)
+        if (path === '/') return pathname === '/';
+
+        return pathname.startsWith(path);
+    }
 
     return (
         <ul className="flex flex-col sm:flex-row p-2 gap-3 sm:gap-10 font-medium">
@@ -25,6 +25,6 @@ const NavItems = () => {
             ))};
         </ul>
     )
-}}
+}
 
 export default NavItems;
